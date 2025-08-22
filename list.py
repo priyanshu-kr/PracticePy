@@ -43,4 +43,6 @@ list3 = [1, 5, 3, 4, 2]
 list3.sort()    # this is inplace sorting in ascending order
 list3.sort(reverse=True)   # this is inplace sorting in descending order
 # print(list3)
+sorted(list3, reverse=True)  # this is non-inplace sorting in descending order
+# print(list3)   
 
