@@ -15,4 +15,7 @@ list1.clear()
 
 list1.insert(0, 'g')
 list1.insert(1, 'k')
-print(list1[0])
+# print(list1[0])
+
+list1.extend(list2)
+print(list1)
