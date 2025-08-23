@@ -46,3 +46,36 @@ list3.sort(reverse=True)   # this is inplace sorting in descending order
 sorted(list3, reverse=True)  # this is non-inplace sorting in descending order
 # print(list3)   
 
+list4 = ["apple", "banana", "kiwi", "mango", "kiwi", "orange"]
+# print(list4.index("kiwi"))   # returns the index of the first occurrence of "kiwi"
+# print(list4.index("kiwi", 3))  # returns the index of "kiwi" starting from index 3
+# print(list4.index("kiwi", 0, 1))  # raises ValueError if "kiwi" is not found in the specified range   
+
+# print(sum(list3))
+
+# print(type(list3))  
+
+# print(list(set(list4)))  # removes duplicates from the list and converts it to a set and then back to a list
+
+###### List Comprehensions ###### 
+# "Compact way to process all or part of the elements in a collection and return a list with the results"
+
+squares = [x**2 for x in range(10)]
+# print(squares)
+
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+# print(even_squares)
+# print([x**2 for x in range(10) if x % 2 != 0])
+
+# print([x**2 for x in range(20) if x % 2 == 0 and x % 3 == 0])
+# print([x**2 for x in range (20) if x%2 == 0 if x%3 == 0])
+
+# print([(x, y) for x in range(3) for y in range(3)])  # Cartesian product
+# print([(x, y) for x in range(3) if x % 2 == 0 for y in range(3) if y % 2 == 0])
+# print([x + y for x in "abc" for y in "def"])
+
+# print([x for x in "abc" if x not in "b"])
+
+
+
+
