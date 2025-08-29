@@ -5,7 +5,8 @@ def fibonacci(n):
     result = []
     while a<= n:
         result.append(a)
-        a, b = b,a + b
+        b, a = a+b, b
+        # a, b = b, a+b  # This also works because of simultaneous unpacking.
     return result
 
 print(fibonacci(10))  # Output: [0, 1, 1, 2, 3, 5, 8]
