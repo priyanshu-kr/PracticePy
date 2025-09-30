@@ -7,4 +7,4 @@ def flatten(lst):
             result.append(item)
     return result
 
-print(flatten([1, [2, [3, 4], 5], 6])
+print(flatten([1, [2, [3, 4], 5], 6]))
