@@ -24,4 +24,4 @@ def merge_sort(arr):
             k += 1
     return arr
 
-    
+print(merge_sort([3,41,2,8,54,9,24]))    
